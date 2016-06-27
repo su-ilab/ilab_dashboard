@@ -1,0 +1,57 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #ff0000;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-octoprint {
+
+  background-color: $background-color;
+
+  .title {
+    font-size: 65px;
+    font-weight: bold;
+    color: $title-color;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+
+    .val {
+      text-align: center;
+    }
+  }
+
+  .completion {
+    font-size: 65px;
+  }
+
+  .state {
+    font-size: 70%;
+  }
+
+  .filename {
+    font-size: 70%;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+
+    .val {
+      text-align: center;
+    }
+  }
+
+  .updated-at {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+
+  &.large h3 {
+    font-size: 65px;
+  }
+}

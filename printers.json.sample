@@ -1,0 +1,14 @@
+{
+  "printers": [
+    {
+      "name": "printer1",
+      "hostname": "printer1.local",
+      "apiKey": "ABC123"
+    },
+    {
+      "name": "printer2",
+      "hostname": "printer2.local",
+      "apiKey": "ABC123"
+    }
+  ]
+}
