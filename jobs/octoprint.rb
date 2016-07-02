@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'httparty'
 require 'json'
-require 'pry'
 
 SCHEDULER.every '1m', first_in: 0 do |job|
   file = File.read('printers.json')
@@ -11,7 +10,6 @@ SCHEDULER.every '1m', first_in: 0 do |job|
     name = printer['name']
 
     data = get_printer_data(printer['hostname'], printer['apiKey'])
-    pp massaged_data(name, data)
     send_event(name, massaged_data(name, data))
   end
 end

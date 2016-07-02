@@ -39,11 +39,15 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   .label {
+    float: left;
     color: $label-color;
+    width: 450px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .value {
-    float: right;
     margin-left: 12px;
     font-weight: 600;
     color: $value-color;
